@@ -1,4 +1,20 @@
+https://mongodb-entities.com/
+https://masstransit.io/
+
+
+docker compose build
 docker compose up -d
 docker compose down
 docker list
-https://mongodb-entities.com/
+docker volume list
+docker volume rm xy
+
+
+dotnet ef migrations add "Init" -o Data/Migrations
+dotnet ef database update
+dotnet ef database drop
+
+
+dotnet add new classlib -o src/Nev
+dotnet sln add src/Nev
+dotnet add reference ../../src/Contracts

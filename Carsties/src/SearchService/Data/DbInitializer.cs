@@ -8,6 +8,7 @@ public class DbInitializer
 {
     public static async Task InitDb(WebApplication app)
     {
+        Console.WriteLine("START SEED");
         await DB.InitAsync("SearchDb", MongoClientSettings
             .FromConnectionString(app.Configuration.GetConnectionString("MongoDbConnection")));
 
