@@ -18,3 +18,6 @@ dotnet ef database drop
 dotnet add new classlib -o src/Nev
 dotnet sln add src/Nev
 dotnet add reference ../../src/Contracts
+
+dotnet new --install Duende.IdentityServer.Templates
+dotnet new isaspid -o src/IdentityService
