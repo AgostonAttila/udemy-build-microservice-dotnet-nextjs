@@ -10,6 +10,9 @@ docker list
 docker volume list
 docker volume rm xy
 
+docker build -f src/AuctionService/Dockerfile -t testing123 .
+docker run testing123 .
+
 
 dotnet ef migrations add "Init" -o Data/Migrations
 dotnet ef database update
@@ -22,3 +25,6 @@ dotnet add reference ../../src/Contracts
 
 dotnet new --install Duende.IdentityServer.Templates
 dotnet new isaspid -o src/IdentityService
+
+
+npx create-next-app@latest
