@@ -25,6 +25,14 @@ dotnet add reference ../../src/Contracts
 
 dotnet new --install Duende.IdentityServer.Templates
 dotnet new isaspid -o src/IdentityService
-
+----------------------------------------------------------------
 
 npx create-next-app@latest
+
+https://react-icons.github.io/react-icons/
+
+npm install -D @tailwindcss/aspect-ratio
+npm install react-countdown
+
+https://transform.tools/
+https://www.flowbite-react.com/ npm i flowbite-react
