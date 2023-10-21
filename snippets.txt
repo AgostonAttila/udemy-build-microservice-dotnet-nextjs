@@ -40,3 +40,5 @@ https://www.flowbite-react.com/ npm i flowbite-react
 
 https://zustand-demo.pmnd.rs/
 npm install zustand query-string
+
+https://next-auth.js.org/
