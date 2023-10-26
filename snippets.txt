@@ -42,3 +42,9 @@ https://zustand-demo.pmnd.rs/
 npm install zustand query-string
 
 https://next-auth.js.org/
+
+npm i react-hook-form react-datepicker
+npm i -D @types/react-datepicker
+https://react-hook-form.com/
+
+npm i react-hot-toast
