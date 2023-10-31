@@ -48,3 +48,7 @@ npm i -D @types/react-datepicker
 https://react-hook-form.com/
 
 npm i react-hot-toast
+
+npm i date-fns
+
+npm i @microsoft/signalr

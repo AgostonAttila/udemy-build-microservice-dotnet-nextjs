@@ -100,7 +100,7 @@ services:
       - mongodb
       - rabbitmq
   notify-svc:
-    image: trycatchlearn/notify-svc:latest
+    image: atesz014/notify-svc:latest
     build:
       context: .
       dockerfile: src/NotificationService/Dockerfile
