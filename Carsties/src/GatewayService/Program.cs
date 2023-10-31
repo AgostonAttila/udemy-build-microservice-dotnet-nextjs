@@ -14,7 +14,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.NameClaimType = "username";
     });
 
-/*
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("customPolicy", b =>
@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
         b.AllowAnyHeader()
             .AllowAnyMethod().AllowCredentials().WithOrigins(builder.Configuration["ClientApp"]);
     });
-});*/
+});
 
 var app = builder.Build();
 

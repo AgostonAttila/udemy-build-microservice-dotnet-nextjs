@@ -1,4 +1,4 @@
-"use-server";
+"use server";
 
 import { Auction, PagedResult } from "@/types";
 import { getTokenWorkaround } from "./authAction";

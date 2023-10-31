@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { useParamsStore } from "@/hooks/useParamsStore";
 import { Button } from "flowbite-react";
