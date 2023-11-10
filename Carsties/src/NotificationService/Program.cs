@@ -2,8 +2,6 @@ using MassTransit;
 using NotificationService;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
 
 builder.Services.AddMassTransit(x =>
 {
@@ -13,12 +11,11 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) =>
     {
-        /*
         cfg.UseRetry(r =>
         {
             r.Handle<RabbitMqConnectionException>();
             r.Interval(5, TimeSpan.FromSeconds(10));
-        });*/
+        });
 
         cfg.Host(builder.Configuration["RabbitMq:Host"], "/", host =>
         {
@@ -30,6 +27,8 @@ builder.Services.AddMassTransit(x =>
     });
 });
 builder.Services.AddSignalR();
+
+var app = builder.Build();
 
 app.MapHub<NotificationHub>("/notifications");
 

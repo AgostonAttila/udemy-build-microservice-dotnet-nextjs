@@ -4,8 +4,9 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
-    domains: ["cdn.pixaby.com"],
+    domains: ["cdn.pixabay.com"],
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;

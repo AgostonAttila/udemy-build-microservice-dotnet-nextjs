@@ -26,7 +26,7 @@ public static class Config
                 ClientName = "Postman",
                 AllowedScopes = {"openid", "profile", "auctionApp"},
                 RedirectUris = {"https://www.getpostman.com/oauth2/callback"},
-                ClientSecrets = new []{new Secret("NoSecret".Sha256())},
+                ClientSecrets = new []{new Secret("NotASecret".Sha256())},
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
             }, new Client
             {
