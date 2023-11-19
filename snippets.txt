@@ -52,3 +52,10 @@ npm i react-hot-toast
 npm i date-fns
 
 npm i @microsoft/signalr
+
+docker network ls
+
+
+127.0.0.1 id.carsties.com app.carsties.com api.carsties.com
+
+https://github.com/FiloSottile/mkcert
